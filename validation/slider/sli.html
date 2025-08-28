@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .sidebar{
+            height: 100vh;
+            width: 10rem;
+            background-color: brown;
+            position: fixed;
+            top: 0;
+            left: 0;
+            transform: translate(-90%);
+            transition: all ease 0.3s;
+        }
+        nav{
+            display: flex;
+            align-items: center;
+            justify-content: right;
+        }
+        .showSidebar{
+            transform: translate(0%);
+        }
+    </style>
+</head>
+<body>
+    <nav>Navbar <button>Toggle</button></nav>
+    <div class="sidebar">
+        Sidebar
+    </div>
+   <script src="script.js"></script> 
+</body>
+</html>
